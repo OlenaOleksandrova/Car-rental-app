@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 120px;
+  max-width: 1440px;
+  height: 68px;
+  background-size: cover;
+  color: black;
+  background-color: #f2f4f7;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover {
+  color: #3470ff;
+  outline: none;
+}
+.span {
+  color: #3470ff;
+}
