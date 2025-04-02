@@ -64,7 +64,7 @@ const CatalogPage = () => {
   };
 
   return (
-    <div>
+    <div className={s.sectionCatalog}>
       <div className={s.filter}>
         <div className={s.inputContainer}>
           <input type="text" placeholder="Choose a brand" className={s.input} />

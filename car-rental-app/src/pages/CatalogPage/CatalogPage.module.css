@@ -7,6 +7,9 @@
   text-align: center;
   justify-content: center;
 }
+.sectionCatalog {
+  margin-top: 84px;
+}
 
 .item {
   display: flex;
