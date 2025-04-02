@@ -6,5 +6,152 @@
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  /* width: calc((100% - 96px) / 4); */
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainInfo {
+  margin-bottom: 8px;
+}
+
+.carModel {
+  color: #3470ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.carBrand {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-right: 2px;
+}
+
+.carYear {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.infoList {
+  text-align: center;
+  justify-content: center;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-left: auto;
+}
+
+.infoList h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  border-radius: 14px;
+  width: 276px;
+  height: 268px;
+  margin-bottom: 16px;
+}
+
+.geoInfo {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #8e929a;
+  margin-bottom: 28px;
+}
+
+.readMoreButton {
+  border-radius: 12px;
+  padding: 12px 96px;
+  width: 276px;
+  height: 44px;
+  background-color: #3470ff;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.readMoreButton:hover {
+  background-color: #0b44cd;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  padding: 12px 16px;
+  width: 204px;
+  border: none;
+  background-color: #dadde1;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #101828;
+}
+.input:nth-child(4) {
+  margin-left: 0;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 204px;
+}
+
+.list li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.list li:hover {
+  background-color: #f0f0f0;
+}
+
+.searchButton {
+  background-color: #3470ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }

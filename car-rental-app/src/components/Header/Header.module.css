@@ -7,7 +7,8 @@
   height: 68px;
   background-size: cover;
   color: black;
-  background-color: #f2f4f7;
+  margin-bottom: 84px;
+  background-color: #dadde1;
 }
 
 .logo {
@@ -23,12 +24,14 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+  outline: none;
 }
 
 .link {
   color: black;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 .link:hover {
   color: #3470ff;
