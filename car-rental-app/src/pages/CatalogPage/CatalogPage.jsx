@@ -67,34 +67,53 @@ const CatalogPage = () => {
     <div className={s.sectionCatalog}>
       <div className={s.filter}>
         <div className={s.inputContainer}>
-          <input type="text" placeholder="Choose a brand" className={s.input} />
+          <input
+            type="text"
+            placeholder="Choose a brand"
+            className={`${s.input} ${s.inputChooseCatalog}`}
+          />
           <svg className={s.icon} onClick={handleBrandIconClick}>
             {/* моя SVGіконка бренду */}
           </svg>
           {showBrandList && (
             <ul className={s.list}>
               {brands.map((brand) => (
-                <li key={brand}>{brand}</li>
+                <li className={s.itemBrands} key={brand}>
+                  {brand}
+                </li>
               ))}
             </ul>
           )}
         </div>
         <div className={s.inputContainer}>
-          <input type="text" placeholder="Choose a price" className={s.input} />
+          <input
+            type="text"
+            placeholder="Choose a price"
+            className={`${s.input} ${s.inputChoosePrice}`}
+          />
           <svg className={s.icon} onClick={handlePriceIconClick}>
             {/* тут SVGіконка ціни */}
           </svg>
           {showPriceList && (
             <ul className={s.list}>
-              <li>Price 1</li>
+              <li className={s.itemBrands}>Price 1</li>
               <li>Price 2</li>
               <li>Price 3</li>
               {/* треба додати елементи списку цін поки чорнова заглушка*/}
             </ul>
           )}
         </div>
-        <input type="number" placeholder="From" className={s.input} />
-        <input type="number" placeholder="To" className={s.input} />
+        <input
+          type="number"
+          placeholder="From"
+          className={`${s.input} ${s.inputFrom}`}
+        />
+
+        <input
+          type="number"
+          placeholder="To"
+          className={`${s.input} ${s.inputTo}`}
+        />
         <button className={s.searchButton}>Search</button>
       </div>
       <ul className={s.listСar}>
@@ -134,6 +153,7 @@ const CatalogPage = () => {
           );
         })}
       </ul>
+      <button className={s.loadMore}>Load more</button>
     </div>
   );
 };

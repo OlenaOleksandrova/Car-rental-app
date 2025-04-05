@@ -6,6 +6,7 @@
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  margin-bottom: 80px;
 }
 .sectionCatalog {
   margin-top: 84px;
@@ -96,8 +97,9 @@
 .filter {
   display: flex;
   justify-content: center;
-  gap: 16px;
   margin-bottom: 56px;
+  /* gap: 16px; */
+  /* color: #8e929a; */
 }
 
 .inputContainer {
@@ -108,16 +110,17 @@
   padding: 12px 16px;
   width: 204px;
   border: none;
-  background-color: #dadde1;
+  background-color: #f7f7f7;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
   color: #101828;
 }
-.input:nth-child(4) {
+
+/* .input:nth-child(4) {
   margin-left: 0;
-}
+} */
 
 .icon {
   position: absolute;
@@ -153,8 +156,46 @@
   background-color: #3470ff;
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 12px 51px;
   font-size: 16px;
   cursor: pointer;
+  font-weight: 600;
+  line-height: 1.25;
+  border-radius: 12px;
+}
+.inputFrom {
+  width: 160px;
+  margin-right: 0;
+  color: #101828;
+}
+.inputTo {
+  width: 160px;
+  margin-left: 0;
+  margin-right: 16px;
+  color: #101828;
+}
+.inputChooseCatalog {
+  margin-right: 16px;
+  color: #101828;
+}
+.inputChoosePrice {
+  margin-right: 16px;
+  color: #101828;
+}
+.itemBrands {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #8e929a;
+}
+.loadMore {
+  border: 1px solid #3470ff;
+  border-radius: 12px;
+  padding: 12px 38px;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* width: 156px; */
 }
