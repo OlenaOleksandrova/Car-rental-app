@@ -67,13 +67,18 @@ const CatalogPage = () => {
     <div className={s.sectionCatalog}>
       <div className={s.filter}>
         <div className={s.inputContainer}>
+          <p className={s.carBrandText}>Car brand</p>
           <input
             type="text"
             placeholder="Choose a brand"
             className={`${s.input} ${s.inputChooseCatalog}`}
           />
           <svg className={s.icon} onClick={handleBrandIconClick}>
-            {/* моя SVGіконка бренду */}
+            <use
+              href={`/public/assets/symbol-defs.svg#${
+                showBrandList ? "icon-up" : "icon-down"
+              }`}
+            />
           </svg>
           {showBrandList && (
             <ul className={s.list}>
@@ -86,35 +91,43 @@ const CatalogPage = () => {
           )}
         </div>
         <div className={s.inputContainer}>
+          <p className={s.carBrandText}>Price/ 1 hour</p>
           <input
             type="text"
             placeholder="Choose a price"
             className={`${s.input} ${s.inputChoosePrice}`}
           />
           <svg className={s.icon} onClick={handlePriceIconClick}>
-            {/* тут SVGіконка ціни */}
+            <use
+              href={`/public/assets/symbol-defs.svg#${
+                showBrandList ? "icon-up" : "icon-down"
+              }`}
+            />
           </svg>
           {showPriceList && (
             <ul className={s.list}>
-              <li className={s.itemBrands}>Price 1</li>
-              <li>Price 2</li>
-              <li>Price 3</li>
-              {/* треба додати елементи списку цін поки чорнова заглушка*/}
+              {cars.map((car) => (
+                <li key={car.id} className={s.itemBrands}>
+                  {car.rentalPrice}
+                </li>
+              ))}
             </ul>
           )}
         </div>
-        <input
-          type="number"
-          placeholder="From"
-          className={`${s.input} ${s.inputFrom}`}
-        />
-
-        <input
-          type="number"
-          placeholder="To"
-          className={`${s.input} ${s.inputTo}`}
-        />
-        <button className={s.searchButton}>Search</button>
+        <div>
+          <p className={s.carBrandText}>Сar mileage / km</p>
+          <input
+            type="number"
+            placeholder="From"
+            className={`${s.input} ${s.inputFrom}`}
+          />
+          <input
+            type="number"
+            placeholder="To"
+            className={`${s.input} ${s.inputTo}`}
+          />
+          <button className={s.searchButton}>Search</button>
+        </div>
       </div>
       <ul className={s.listСar}>
         {cars.map((car) => {

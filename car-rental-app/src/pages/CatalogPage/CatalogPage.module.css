@@ -102,20 +102,43 @@
   /* color: #8e929a; */
 }
 
+.carBrandText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  margin-bottom: 8px;
+  color: #8e929a;
+}
+
 .inputContainer {
   position: relative;
 }
 
 .input {
-  padding: 12px 16px;
+  padding: 16px 12px;
   width: 204px;
-  border: none;
+  /* border: none; */
   background-color: #f7f7f7;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
   color: #101828;
+}
+.input:focus {
+  outline: none;
+}
+
+.inputFrom::-webkit-outer-spin-button,
+.inputFrom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputTo::-webkit-outer-spin-button,
+.inputTo::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* .input:nth-child(4) {
@@ -124,10 +147,17 @@
 
 .icon {
   position: absolute;
-  top: 50%;
+  top: 68%;
+  transform: translateY(-50%);
+  right: 34px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+  /* top: 50%;
   right: 10px;
   transform: translateY(-50%);
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .list {
@@ -166,22 +196,32 @@
 .inputFrom {
   width: 160px;
   margin-right: 0;
-  color: #101828;
+  border: none;
+  border-right: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
 }
+/* .inputFrom:active {
+  border: none;
+} */
+
 .inputTo {
   width: 160px;
   margin-left: 0;
   margin-right: 16px;
   color: #101828;
+  border: none;
 }
 .inputChooseCatalog {
   margin-right: 16px;
   color: #101828;
+  border: none;
 }
 .inputChoosePrice {
   margin-right: 16px;
   color: #101828;
+  border: none;
 }
+
 .itemBrands {
   font-weight: 500;
   font-size: 16px;
